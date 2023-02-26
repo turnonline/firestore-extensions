@@ -1,0 +1,218 @@
+{
+    "oldValue": {
+        "createTime": "2023-02-13T08:01:58.295215Z",
+        "fields": {
+            "createdDate": {
+                "timestampValue": "2023-02-13T08:01:07.150Z"
+            },
+            "creditor": {
+                "mapValue": {
+                    "fields": {
+                        "accountId": {
+                            "integerValue": "5699980220170240"
+                        },
+                        "businessName": {
+                            "stringValue": "Kokiskashop"
+                        },
+                        "domicile": {
+                            "stringValue": "SK"
+                        }
+                    }
+                }
+            },
+            "event": {
+                "nullValue": null
+            },
+            "id": {
+                "integerValue": "5742876508028928"
+            },
+            "itemName": {
+                "stringValue": "Umývadlo z prírodného kameňa MIRUM 509 Ø 45 cm Black"
+            },
+            "metaFields": {
+                "nullValue": null
+            },
+            "modificationDate": {
+                "timestampValue": "2023-02-13T08:01:35.934Z"
+            },
+            "overview": {
+                "mapValue": {
+                    "fields": {
+                        "about": {
+                            "nullValue": null
+                        },
+                        "category": {
+                            "stringValue": "HOUSE_LIVING"
+                        },
+                        "productUrl": {
+                            "nullValue": null
+                        },
+                        "thumbnailUrl": {
+                            "stringValue": "https://lh3.googleusercontent.com/3f-7krFfanOPFXU8F13jXw2o7In7ZEasg695slZDT6EWRCNWADDaSHYMcM6p96CIRX_s9_RYlObDySwuFze9GHgfUZEWrYhYag"
+                        }
+                    }
+                }
+            },
+            "pricing": {
+                "mapValue": {
+                    "fields": {
+                        "currency": {
+                            "stringValue": "EUR"
+                        },
+                        "items": {
+                            "mapValue": {
+                                "fields": {
+                                    "amount": {
+                                        "doubleValue": 1.0
+                                    },
+                                    "checkedIn": {
+                                        "booleanValue": true
+                                    },
+                                    "currency": {
+                                        "stringValue": "EUR"
+                                    },
+                                    "discountApplied": {
+                                        "booleanValue": false
+                                    },
+                                    "discountCode": {
+                                        "nullValue": null
+                                    },
+                                    "discountCodeDefined": {
+                                        "booleanValue": false
+                                    },
+                                    "discountDefined": {
+                                        "booleanValue": false
+                                    },
+                                    "finalPrice": {
+                                        "doubleValue": 164.89
+                                    },
+                                    "finalPriceExclVat": {
+                                        "doubleValue": 137.41
+                                    },
+                                    "finalValueAddedTax": {
+                                        "doubleValue": 20.0
+                                    },
+                                    "finalVat": {
+                                        "stringValue": "STANDARD"
+                                    },
+                                    "finalVatAmount": {
+                                        "doubleValue": 27.48
+                                    },
+                                    "finalVatBase": {
+                                        "doubleValue": 137.41
+                                    },
+                                    "id": {
+                                        "nullValue": null
+                                    },
+                                    "inline": {
+                                        "nullValue": null
+                                    },
+                                    "itemName": {
+                                        "stringValue": "Umývadlo z prírodného kameňa MIRUM 509 Ø 45 cm Black"
+                                    },
+                                    "itemType": {
+                                        "stringValue": "Standard"
+                                    },
+                                    "itemUrl": {
+                                        "nullValue": null
+                                    },
+                                    "items": {
+                                        "nullValue": null
+                                    },
+                                    "metaFields": {
+                                        "nullValue": null
+                                    },
+                                    "order": {
+                                        "nullValue": null
+                                    },
+                                    "parentKey": {
+                                        "nullValue": null
+                                    },
+                                    "priceExclVat": {
+                                        "doubleValue": 137.41
+                                    },
+                                    "product": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "id": {
+                                                    "integerValue": "5742876508028928"
+                                                },
+                                                "templateId": {
+                                                    "nullValue": null
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "snippet": {
+                                        "stringValue": "Designové umývadlo Mirum 509 na dosku je vyrobené z jedného kusu kameňa, pri spracovaní sa nepoužíva žiadne lepidlo, tmel ani farba."
+                                    },
+                                    "subsidiary": {
+                                        "mapValue": {
+                                            "fields": {
+                                                "deliveryDays": {
+                                                    "stringValue": "0"
+                                                },
+                                                "preferredShipping": {
+                                                    "stringValue": "SLOVENSKA_POSTA_BALIK_NA_ADRESU:L"
+                                                },
+                                                "productWeight": {
+                                                    "stringValue": "24000"
+                                                },
+                                                "productsInStock": {
+                                                    "stringValue": "3"
+                                                },
+                                                "shippingOptions": {
+                                                    "arrayValue": {
+                                                        "values": [
+                                                            {
+                                                                "stringValue": "SLOVENSKA_POSTA_EXPRES_BALIK_NA_ADRESU:L"
+                                                            },
+                                                            {
+                                                                "stringValue": "SLOVENSKA_POSTA_BALIK_NA_ADRESU:L"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "thumbnailUrl": {
+                                        "stringValue": "https://lh3.googleusercontent.com/3f-7krFfanOPFXU8F13jXw2o7In7ZEasg695slZDT6EWRCNWADDaSHYMcM6p96CIRX_s9_RYlObDySwuFze9GHgfUZEWrYhYag"
+                                    },
+                                    "unit": {
+                                        "stringValue": "ITEM"
+                                    },
+                                    "valueAddedTax": {
+                                        "doubleValue": 20.0
+                                    },
+                                    "vat": {
+                                        "stringValue": "STANDARD"
+                                    }
+                                }
+                            }
+                        },
+                        "priceExclVat": {
+                            "doubleValue": 137.41
+                        },
+                        "vat": {
+                            "stringValue": "STANDARD"
+                        },
+                        "vatEU": {
+                            "stringValue": "ZERO"
+                        },
+                        "vatNonEU": {
+                            "stringValue": "STANDARD"
+                        }
+                    }
+                }
+            },
+            "snippet": {
+                "stringValue": "Designové umývadlo Mirum 509 na dosku je vyrobené z jedného kusu kameňa, pri spracovaní sa nepoužíva žiadne lepidlo, tmel ani farba."
+            }
+        },
+        "name": "projects/prj-1ab/databases/(default)/documents/products/5742876508028928",
+        "updateTime": "2023-02-13T08:01:58.295215Z"
+    },
+    "updateMask": {},
+    "value": {}
+}

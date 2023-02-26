@@ -1,0 +1,232 @@
+{
+    "oldValue": {
+        "createTime": "2023-02-16T09:49:44.633423Z",
+        "fields": {
+            "aFieldString": {
+                "stringValue": "String value"
+            },
+            "bFieldBoolean": {
+                "booleanValue": true
+            },
+            "cFieldLong": {
+                "integerValue": "9810877456027117"
+            },
+            "dFieldDouble": {
+                "doubleValue": 178.99
+            },
+            "eFieldInteger": {
+                "integerValue": "852456"
+            },
+            "gFieldGeoPoint": {
+                "geoPointValue": {
+                    "latitude": 48.50217,
+                    "longitude": 16.9704
+                }
+            },
+            "listOf": {
+                "arrayValue": {
+                    "values": [
+                        {
+                            "timestampValue": "2023-02-01T09:58:48.416Z"
+                        },
+                        {
+                            "timestampValue": "2023-02-05T09:59:29.183Z"
+                        },
+                        {
+                            "timestampValue": "2023-02-05T10:10:01.103Z"
+                        }
+                    ]
+                }
+            },
+            "map": {
+                "mapValue": {
+                    "fields": {
+                        "s-property-1": {
+                            "stringValue": "String value for s-property-1"
+                        },
+                        "b-property-2": {
+                            "booleanValue": true
+                        },
+                        "tPropertyX": {
+                            "timestampValue": "2023-01-15T09:00:38.023Z"
+                        }
+                    }
+                }
+            },
+            "nFieldNull": {
+                "nullValue": null
+            },
+            "rFieldReference": {
+                "referenceValue": "projects/prj-1ab/databases/(default)/documents/offers/9jpnp0GakiAIHNEsdkFg"
+            },
+            "tFieldTimestamp": {
+                "timestampValue": "2023-02-16T09:48:05.735Z"
+            }
+        },
+        "name": "projects/prj-1ab/databases/(default)/documents/tests/BDVjnsjUpyu95iYQUPZb",
+        "updateTime": "2023-02-16T10:00:07.172479Z"
+    },
+    "updateMask": {
+        "fieldPaths": [
+            "cFieldLong",
+            "dFieldDouble",
+            "items",
+            "listOfMap",
+            "map.lastName"
+        ]
+    },
+    "value": {
+        "createTime": "2023-02-16T09:49:44.633423Z",
+        "fields": {
+            "aFieldString": {
+                "stringValue": "String value"
+            },
+            "bFieldBoolean": {
+                "booleanValue": true
+            },
+            "cFieldLong": {
+                "integerValue": "2747879507027928"
+            },
+            "dFieldDouble": {
+                "doubleValue": 199.85
+            },
+            "eFieldInteger": {
+                "integerValue": "852456"
+            },
+            "gFieldGeoPoint": {
+                "geoPointValue": {
+                    "latitude": 48.50217,
+                    "longitude": 16.9704
+                }
+            },
+            "items": {
+                "mapValue": {
+                    "fields": {
+                        "inner": {
+                            "mapValue": {
+                                "fields": {
+                                    "InnerFieldName": {
+                                        "stringValue": "The inner property value"
+                                    },
+                                    "innerList": {
+                                        "arrayValue": {
+                                            "values": [
+                                                {
+                                                    "stringValue": "Inner list item 1"
+                                                },
+                                                {
+                                                    "stringValue": "Inner list item 2"
+                                                },
+                                                {
+                                                    "stringValue": "Inner list item 3"
+                                                },
+                                                {
+                                                    "stringValue": "Inner list item 4"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "inStock": {
+                                        "integerValue": "1852"
+                                    }
+                                }
+                            }
+                        },
+                        "itemName": {
+                            "stringValue": "Item name"
+                        },
+                        "modified": {
+                            "timestampValue": "2023-01-02T10:03:23.547Z"
+                        }
+                    }
+                }
+            },
+            "listOf": {
+                "arrayValue": {
+                    "values": [
+                        {
+                            "timestampValue": "2023-02-01T09:58:48.416Z"
+                        },
+                        {
+                            "timestampValue": "2023-02-05T09:59:29.183Z"
+                        },
+                        {
+                            "timestampValue": "2023-02-05T10:10:01.103Z"
+                        }
+                    ]
+                }
+            },
+            "listOfMap": {
+                "arrayValue": {
+                    "values": [
+                        {
+                            "mapValue": {
+                                "fields": {
+                                    "p1": {
+                                        "stringValue": "Value for P1"
+                                    },
+                                    "p2": {
+                                        "stringValue": "Value for P2"
+                                    },
+                                    "p3": {
+                                        "stringValue": "Value for P3"
+                                    },
+                                    "p4": {
+                                        "stringValue": "Value for P4"
+                                    },
+                                    "p5": {
+                                        "stringValue": "Value for P5"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "mapValue": {
+                                "fields": {
+                                    "date": {
+                                        "timestampValue": "2019-05-15T04:37:52.379Z"
+                                    },
+                                    "name": {
+                                        "stringValue": "My name"
+                                    },
+                                    "numberOf": {
+                                        "integerValue": "105"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "map": {
+                "mapValue": {
+                    "fields": {
+                        "s-property-1": {
+                            "stringValue": "String value for s-property-1"
+                        },
+                        "b-property-2": {
+                            "booleanValue": true
+                        },
+                        "tPropertyX": {
+                            "timestampValue": "2023-01-15T09:00:38.023Z"
+                        },
+                        "lastName": {
+                            "stringValue": "Kovalsky"
+                        }
+                    }
+                }
+            },
+            "nFieldNull": {
+                "nullValue": null
+            },
+            "rFieldReference": {
+                "referenceValue": "projects/prj-1ab/databases/(default)/documents/offers/9jpnp0GakiAIHNEsdkFg"
+            },
+            "tFieldTimestamp": {
+                "timestampValue": "2023-02-16T09:48:05.735Z"
+            }
+        },
+        "name": "projects/prj-1ab/databases/(default)/documents/tests/BDVjnsjUpyu95iYQUPZb",
+        "updateTime": "2023-02-16T10:06:05.384287Z"
+    }
+}
