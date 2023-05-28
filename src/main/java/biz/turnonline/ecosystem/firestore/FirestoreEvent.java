@@ -39,9 +39,11 @@ import static com.google.common.base.Strings.isNullOrEmpty;
 /**
  * Firestore event java model with a set of convenient methods to get values from.
  * <p>
- * The idea behind set of the fault-tolerant methods is, the consumer of the event may not have a control over stored
- * document structure or types. So in case of the value retrieval failure, the Function automatic re-try mechanism
- * make no sense and consumer must handle missing or invalid document properties different way.
+ * The idea behind a set of fault-tolerant methods is that the consumer of the event may not have control over
+ * the stored document structure or types in Firestore.
+ * Therefore, in the case of a value retrieval failure (thrown exception), the automatic re-try mechanism becomes
+ * irrelevant, and the consumer must handle missing or invalid document properties
+ * differently.
  * </p>
  *
  * @author <a href="mailto:medvegy@turnonline.biz">Aurel Medvegy</a>
