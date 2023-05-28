@@ -562,6 +562,49 @@ class FirestoreEventTest
     }
 
     @Test
+    void findValueAs_HappyScenarios_AsEnum()
+    {
+        Type eValue = testedDocument.findValueAs( Type.class, "eFieldEnum" );
+        assertWithMessage( "Value of enum Type" )
+                .that( eValue )
+                .isEqualTo( Type.BIG );
+    }
+
+    @Test
+    void findOldValueAs_HappyScenarios_AsEnum()
+    {
+        assertWithMessage( "Value of enum Type" )
+                .that( testedDocument.findOldValueAs( Type.class, "eFieldEnum" ) )
+                .isEqualTo( Type.SMALL );
+    }
+
+    @Test
+    void findValueAs_InvalidType_AsEnum()
+    {
+        Type eValue = testedDocument.findValueAs( Type.class, "cFieldLong" );
+        assertWithMessage( "Value of enum Type" )
+                .that( eValue )
+                .isNull();
+    }
+
+    @Test
+    void findValueAs_HappyScenarios_AsListOfEnums()
+    {
+        List<Type> list = testedDocument.findValueAsList( Type.class, "types" );
+        assertWithMessage( "Value of type List<Enum>" )
+                .that( list )
+                .hasSize( 2 );
+
+        assertWithMessage( "List item[0] value" )
+                .that( list.get( 0 ) )
+                .isEqualTo( Type.MIDDLE );
+
+        assertWithMessage( "List item[1] value" )
+                .that( list.get( 1 ) )
+                .isEqualTo( Type.BIG );
+    }
+
+    @Test
     void findValueAs_HappyScenarios_AsInnerMapProperties()
     {
         Boolean bValue = testedDocument.findValueAs( Boolean.class, "map", "b-property-2" );
@@ -880,5 +923,53 @@ class FirestoreEventTest
         assertWithMessage( "Document deleted" )
                 .that( deleted.isEventTypeDeleted() )
                 .isTrue();
+    }
+
+    @Test
+    void isUpdated_True()
+    {
+        assertWithMessage( "Value at specified path updated" )
+                .that( testedDocument.isUpdated( "eFieldEnum" ) )
+                .isTrue();
+    }
+
+    @Test
+    void isUpdated_False()
+    {
+        assertWithMessage( "Value at specified path updated" )
+                .that( testedDocument.isUpdated( "eFieldInteger" ) )
+                .isFalse();
+    }
+
+    @Test
+    void getCreateTime()
+    {
+        assertWithMessage( "Create time" )
+                .that( testedDocument.getCreateTime() )
+                .isEqualTo( new Date( 1676540984633L ) );
+    }
+
+    @Test
+    void getUpdateTime()
+    {
+        assertWithMessage( "Update time" )
+                .that( testedDocument.getUpdateTime() )
+                .isEqualTo( new Date( 1676541965384L ) );
+    }
+
+    @Test
+    void getOldCreateTime()
+    {
+        assertWithMessage( "Old create time" )
+                .that( testedDocument.getOldCreateTime() )
+                .isEqualTo( new Date( 1676540984633L ) );
+    }
+
+    @Test
+    void getOldUpdateTime()
+    {
+        assertWithMessage( "Old update create time" )
+                .that( testedDocument.getOldUpdateTime() )
+                .isEqualTo( new Date( 1676541607172L ) );
     }
 }

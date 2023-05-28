@@ -17,6 +17,9 @@
             "eFieldInteger": {
                 "integerValue": "852456"
             },
+            "eFieldEnum": {
+                "stringValue": "SMALL"
+            },
             "gFieldGeoPoint": {
                 "geoPointValue": {
                     "latitude": 48.50217,
@@ -70,7 +73,9 @@
         "fieldPaths": [
             "cFieldLong",
             "dFieldDouble",
+            "eFieldEnum",
             "items",
+            "types",
             "listOfMap",
             "map.lastName"
         ]
@@ -92,6 +97,9 @@
             },
             "eFieldInteger": {
                 "integerValue": "852456"
+            },
+            "eFieldEnum": {
+                "stringValue": "BIG"
             },
             "gFieldGeoPoint": {
                 "geoPointValue": {
@@ -194,6 +202,18 @@
                                     }
                                 }
                             }
+                        }
+                    ]
+                }
+            },
+            "types": {
+                "arrayValue": {
+                    "values": [
+                        {
+                            "stringValue": "MIDDLE"
+                        },
+                        {
+                            "stringValue": "BIG"
                         }
                     ]
                 }
