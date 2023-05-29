@@ -145,6 +145,7 @@ public class FirestoreEvent
      *
      * @param type  the expected type of the response, type of the last path element
      * @param props the property field path elements
+     * @param <T>   the expected type of the response
      * @return the value taken from the source map or {@code null}
      */
     public <T> T findValueAs( Class<T> type, String... props )
@@ -182,6 +183,7 @@ public class FirestoreEvent
      *
      * @param type  the expected type of the response, type of the last path element
      * @param props the property field path elements
+     * @param <T>   the expected type of the response
      * @return the value taken from the source map or {@code null}
      */
     public <T> T findOldValueAs( Class<T> type, String... props )
@@ -478,6 +480,7 @@ public class FirestoreEvent
      *
      * @param type  the expected type of the list item
      * @param props the property field path elements, the last one has to be type of {@code arrayValue}
+     * @param <T>   the expected list type element in response
      * @return the list of values taken from the source map or empty list
      */
     @SuppressWarnings( "unchecked" )
@@ -503,6 +506,7 @@ public class FirestoreEvent
      *
      * @param type  the expected type of the list item
      * @param props the property field path elements, the last one has to be type of {@code arrayValue}
+     * @param <T>   the expected list type element in response
      * @return the list of values taken from the source map or empty list
      */
     @SuppressWarnings( "unchecked" )
