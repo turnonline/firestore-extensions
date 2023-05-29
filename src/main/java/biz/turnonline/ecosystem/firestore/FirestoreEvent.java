@@ -41,7 +41,7 @@ import static com.google.common.base.Strings.isNullOrEmpty;
  * <p>
  * The idea behind a set of fault-tolerant methods is that the consumer of the event may not have control over
  * the stored document structure or types in Firestore.
- * Therefore, in the case of a value retrieval failure (thrown exception), the automatic re-try mechanism becomes
+ * Therefore, in the case of a value retrieval failure (class cast exception), the automatic re-try mechanism becomes
  * irrelevant, and the consumer must handle missing or invalid document properties
  * differently.
  * </p>
