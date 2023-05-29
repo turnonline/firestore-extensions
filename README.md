@@ -1,6 +1,6 @@
 # Firestore Extensions
 
-Utilities that extend Firebase Cloud Firestore functionality.
+Utilities for Google Cloud Functions that extend Firebase Cloud Firestore functionality.
 
 ## FirestoreEvent with fault-tolerant methods
 

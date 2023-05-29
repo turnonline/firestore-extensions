@@ -28,7 +28,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Firestore Extensions</name>
-    <description>Utilities that extend Firebase Cloud Firestore functionality</description>
+    <description>Utilities for Google Cloud Functions that extend Firebase Cloud Firestore functionality</description>
 
     <scm>
         <connection>scm:git:[fetch=]git@github.com:turnonline/firestore-extensions.git</connection>
