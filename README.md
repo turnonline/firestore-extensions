@@ -43,6 +43,6 @@ see the [FirestoreEvent javadoc](src/main/java/biz/turnonline/ecosystem/firestor
 <dependency>
     <groupId>biz.turnonline.ecosystem</groupId>
     <artifactId>firestore-extensions</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
