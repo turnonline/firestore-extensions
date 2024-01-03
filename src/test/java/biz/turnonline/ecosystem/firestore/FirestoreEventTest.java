@@ -958,6 +958,14 @@ class FirestoreEventTest
     }
 
     @Test
+    void getFullDocPath()
+    {
+        assertWithMessage( "Value name" )
+                .that( testedDocument.getFullDocPath() )
+                .isEqualTo( "projects/prj-1ab/databases/(default)/documents/tests/BDVjnsjUpyu95iYQUPZb" );
+    }
+
+    @Test
     void getOldCreateTime()
     {
         assertWithMessage( "Old create time" )
@@ -971,5 +979,13 @@ class FirestoreEventTest
         assertWithMessage( "Old update create time" )
                 .that( testedDocument.getOldUpdateTime() )
                 .isEqualTo( new Date( 1676541607172L ) );
+    }
+
+    @Test
+    void getOldFullDocPath()
+    {
+        assertWithMessage( "Value name" )
+                .that( testedDocument.getOldFullDocPath() )
+                .isEqualTo( "projects/prj-1ab/databases/(default)/documents/tests/BDVjnsjUpyu95iYQUPZb" );
     }
 }

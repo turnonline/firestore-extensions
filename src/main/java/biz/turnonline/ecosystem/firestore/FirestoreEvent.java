@@ -111,6 +111,17 @@ public class FirestoreEvent
     }
 
     /**
+     * Returns the full document path where the event has occurred, including the project and database name.
+     * Taken from the {@link #value}.
+     *
+     * @return the full document path
+     */
+    public String getFullDocPath()
+    {
+        return this.value.name;
+    }
+
+    /**
      * The time when a document was created (the first occurrence)
      * <p>
      * Example
@@ -136,6 +147,17 @@ public class FirestoreEvent
     public Date getOldUpdateTime()
     {
         return this.oldValue.updateTime;
+    }
+
+    /**
+     * Returns the full document path where the event has occurred, including the project and database name.
+     * Taken from the {@link #oldValue}.
+     *
+     * @return the full document path
+     */
+    public String getOldFullDocPath()
+    {
+        return this.oldValue.name;
     }
 
     /**
