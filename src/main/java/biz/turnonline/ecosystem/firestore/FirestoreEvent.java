@@ -636,16 +636,16 @@ public class FirestoreEvent
     }
 
     /**
-     * Searches the value at the specified property path, or returns {@code null} if it does not exist
+     * Searches for a value at the specified property path, returning {@code null} if it does not exist
      * (logged as a warning).
-     * Operation is a fault-tolerant (except for {@link Map}), if there is a mismatch between expected type
-     * and the current value it will return {@code null} and the incident will be logged as a warning.
+     * This operation is fault-tolerant (except for {@link Map}). If there is a mismatch between the expected type
+     * and the current value, it will return {@code null}, and the incident will be logged as a warning.
      * <p>
-     * The {@link List} type has a special behavior. If target property represents an 'arrayValue', it will try to
-     * convert value in to the target parameter type.
-     * In case of the unexpected list item type that value will be missing in the list.
-     * So the list might be completely empty.
-     * </p>
+     * The {@link List} type has a special behavior. If the target property represents an 'arrayValue', it will try to
+     * convert the value into the target parameter type.
+     * In the case of an unexpected list item type, that value will be missing in the list.
+     * As a result, the list might be completely empty.
+     * <p>
      * Field value type can be only one of the following:
      * <ul>
      *     <li>nullValue: null</li>
@@ -661,18 +661,18 @@ public class FirestoreEvent
      *     <li>mapValue: object {@link Map}</li>
      * </ul>
      *
-     * <strong>Note:</strong> In order to be fault-tolerant for {@link Map} responses too,
-     * it's being preferred to use
+     * <strong>Note:</strong> In order to be fault-tolerant for {@link Map} responses as well,
+     * it's recommended to use
      * <ul>
-     *     <li>{@link #findValueAsMap(String...)} that properly handles the response</li>
+     *     <li>{@link #findValueAsMap(String...)} which properly handles the response</li>
      * </ul>
      *
-     * @param map   the Firestore map as a source of the values to be searched
-     * @param type  the expected type of the response, type of the last path element
+     * @param map   the Firestore map as the source of the values to be searched
+     * @param type  the expected type of the response, which is the type of the last path element
      * @param props the property field path elements
      * @return the value taken from the source map or {@code null}
      */
-    Object findValueIn( Map<?, ?> map, Class<?> type, String... props )
+    public Object findValueIn( Map<?, ?> map, Class<?> type, String... props )
     {
         Object value = map;
         for ( String pathElement : props )
@@ -837,7 +837,7 @@ public class FirestoreEvent
         else if ( Map.class.isAssignableFrom( type ) )
         {
             Map<?, ?> mv = ( Map<?, ?> ) source.get( "mapValue" );
-            value = mv == null ? null : mv.values()
+            value = mv == null ? findValueIn( source, type, property ) : mv.values()
                     .stream()
                     .findFirst()
                     .orElse( null );
