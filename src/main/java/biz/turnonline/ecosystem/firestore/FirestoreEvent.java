@@ -672,7 +672,7 @@ public class FirestoreEvent
      * @param props the property field path elements
      * @return the value taken from the source map or {@code null}
      */
-    public Object findValueIn( Map<?, ?> map, Class<?> type, String... props )
+    public static Object findValueIn( Map<?, ?> map, Class<?> type, String... props )
     {
         Object value = map;
         for ( String pathElement : props )
@@ -738,7 +738,7 @@ public class FirestoreEvent
      * @param property the name of the property the value is being evaluated
      * @return the converted value or {@code null}
      */
-    private <T> T convert( Map<?, ?> source, Class<T> type, String property )
+    private static <T> T convert( Map<?, ?> source, Class<T> type, String property )
     {
         final Object value;
         if ( source.containsKey( "nullValue" ) )
