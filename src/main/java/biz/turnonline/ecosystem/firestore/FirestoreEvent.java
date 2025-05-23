@@ -885,7 +885,7 @@ public class FirestoreEvent
     public boolean isEventTypeCreated()
     {
         return ( this.oldValue == null || this.oldValue.fields == null || this.oldValue.fields.isEmpty() )
-                && ( this.updateMask.fieldPaths == null || this.updateMask.fieldPaths.isEmpty() );
+                && ( this.updateMask == null || this.updateMask.fieldPaths == null || this.updateMask.fieldPaths.isEmpty() );
     }
 
     /**
@@ -898,6 +898,7 @@ public class FirestoreEvent
         return this.value != null
                 && this.value.fields != null
                 && !this.value.fields.isEmpty()
+                && this.oldValue != null
                 && this.oldValue.fields != null
                 && !this.oldValue.fields.isEmpty();
     }
@@ -910,7 +911,7 @@ public class FirestoreEvent
     public boolean isEventTypeDeleted()
     {
         return ( this.value == null || this.value.fields == null || this.value.fields.isEmpty() )
-                && !( this.oldValue.fields == null || this.oldValue.fields.isEmpty() );
+                && !( this.oldValue == null || this.oldValue.fields == null || this.oldValue.fields.isEmpty() );
     }
 
     @Override
