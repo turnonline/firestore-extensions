@@ -884,7 +884,7 @@ public class FirestoreEvent
      */
     public boolean isEventTypeCreated()
     {
-        return ( this.oldValue.fields == null || this.oldValue.fields.isEmpty() )
+        return ( this.oldValue == null || this.oldValue.fields == null || this.oldValue.fields.isEmpty() )
                 && ( this.updateMask.fieldPaths == null || this.updateMask.fieldPaths.isEmpty() );
     }
 
@@ -895,7 +895,8 @@ public class FirestoreEvent
      */
     public boolean isEventTypeUpdated()
     {
-        return this.value.fields != null
+        return this.value != null
+                && this.value.fields != null
                 && !this.value.fields.isEmpty()
                 && this.oldValue.fields != null
                 && !this.oldValue.fields.isEmpty();
@@ -908,7 +909,7 @@ public class FirestoreEvent
      */
     public boolean isEventTypeDeleted()
     {
-        return ( this.value.fields == null || this.value.fields.isEmpty() )
+        return ( this.value == null || this.value.fields == null || this.value.fields.isEmpty() )
                 && !( this.oldValue.fields == null || this.oldValue.fields.isEmpty() );
     }
 
